@@ -1,0 +1,15 @@
+<div>
+  <h2>Todo Edit</h2>
+  <div>
+    <label>Todo ID:
+      <input [(ngModel)]="todoData.id" placeholder="Todo ID"/>
+    </label><br>
+    <label>Todo Title:
+      <input [(ngModel)]="todoData.title" placeholder="Todo Title"/>
+    </label><br>
+    <label>Todo Completed:
+      <input [(ngModel)]="todoData.completed" placeholder="Todo Completed"/>
+    </label><br>
+  </div>
+  <button (click)="updateTodo()">Update</button>
+</div>

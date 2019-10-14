@@ -23,9 +23,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "styles.css",
+              "src/assets/css/jkeyboard.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "src/assets/js/jkeyboard.js"
+            ],
             "es5BrowserSupport": true
           },
           "configurations": {

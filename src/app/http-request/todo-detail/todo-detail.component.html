@@ -1,0 +1,11 @@
+<div *ngIf="todo" class="products">
+  <h2>{{todo.title}} => Details</h2>
+  <div><span>ID: </span>{{todo.id}}</div>
+  <div><span>Completed: </span>{{todo.completed}}</div>
+  
+  <div>
+    <button routerLink="/http-request/todo-edit/{{todo.id}}">
+      Edit
+    </button>
+  </div>
+</div>

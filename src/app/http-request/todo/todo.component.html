@@ -1,0 +1,17 @@
+<h2>Product List</h2>
+
+<div>
+  <button (click)="add()">
+    Add
+  </button>
+</div>
+
+<ul class="products">
+  <li *ngFor="let p of todos; let i=index;">
+    <a routerLink="/http-request/todo-details/{{p.id}}">
+      <span class="badge">{{i+1}}</span> {{p.title}}
+    </a>
+    <button class="delete" title="delete todo"
+      (click)="delete(p.id)">x</button>
+  </li>
+</ul>
